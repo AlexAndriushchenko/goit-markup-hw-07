@@ -1,32 +1,22 @@
 {
-  "liveServer.settings.port": 5501
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment"
-        ],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#ffff35" // change color only for the comment text
-        }
-      }
-      // {
-      //   "scope": ["punctuation.definition.comment"],
-      //   "settings": {
-      //     "fontStyle": "italic",
-      //     "foreground": "#ffff35" // change color only for the punctuation
-      //   }
-      // }
-    ]
-  },
-
-  "workbench.colorCustomizations": {
-    "statusBar.background" : "#1A1A1A",
-    "statusBar.noFolderBackground" : "#212121",
-    "statusBar.debuggingBackground": "#263238"
-    
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
+
+
 
 
 
